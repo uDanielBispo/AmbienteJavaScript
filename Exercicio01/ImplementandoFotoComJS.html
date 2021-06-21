@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Implementação com JS</title>
+</head>
+<body>
+    <h1>Exercicio de Implementação de Imagens com JS</h1>
+    <p>
+        A intenção é que ao clicar neste botão: 
+        <input type="button" value="Inserir" onclick="AdicionarImagem()">
+        Adicione uma imagem ao site
+    </p>
+    <script>
+
+        function AdicionarImagem()
+        {
+            var img = document.createElement("img");
+            img.setAttribute("id", "foto");
+            img.src = 'foto-jovem-f.png';
+            document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>

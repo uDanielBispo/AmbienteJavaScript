@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola Mundo-JS</title>
+    <style>
+        body
+        {
+            background-color: rgb(0, 174, 255);
+        }
+        p
+        {
+            font-family: cursive;
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            color: white;
+        }
+        div
+        {
+            background-color: white;
+            color: rgb(0, 0, 0);
+            position: relative;
+            text-align: center;   
+            height: 630px;
+            line-height: 600px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+     
+
+    </style>
+</head>
+<body>
+    <p>Aqui estará o tão famigerado "Olá Mundo"</p>
+    <div id="olamundo" onclick="OlaMundo()" onmouseover="MouseEmCima()" onmouseout="MouseSaiu()">
+        AQUI
+    </div>
+    <script>
+        let div = document.getElementById('olamundo');
+        let contador = 0;
+        function OlaMundo()
+        {
+            contador++;          
+            switch(contador)
+            {
+                case 1:
+                div.style.fontSize = '50px';
+                div.style.background = 'yellow'
+                div.innerHTML = `<strong>Olá Mundo</strong>`;
+                break;
+                case 2:
+                div.style.fontSize = '75px';
+                div.style.background = 'yellow'
+                div.innerHTML = `<strong>Olá Mundo</strong>`;
+                break;
+                case 3:
+                div.style.fontSize = '100px';
+                div.style.background = 'yellow'
+                div.innerHTML = `<strong>Olá Mundo</strong>`;
+                contador = 0;
+                break;
+            } 
+        }
+
+        function MouseEmCima()
+        {         
+                div.style.background = 'lightgreen'
+                div.style.fontSize = '20px';
+                div.innerHTML = `Clica pra ver o que acontece.`;              
+        }
+        function MouseSaiu()
+        {
+            div.style.background = 'lightgreen'
+            div.style.fontSize = '20px';
+            div.innerHTML = `Mas já vai embora? Volta aqui, clica denovo`;
+        }
+
+    </script>
+</body>
+</html>
