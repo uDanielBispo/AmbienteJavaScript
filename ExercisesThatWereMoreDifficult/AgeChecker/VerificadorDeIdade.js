@@ -1,7 +1,6 @@
 function Verificar()
 {
     let Resposta = document.getElementById("Resultado");
-
     let Foto = document.getElementById('Foto'); 
 
     //Recebendo ano da maquina do usuario
@@ -35,7 +34,7 @@ function Verificar()
            
         /*Lógica para entender gênero*/
 
-        //Caso selecione Masculino
+        //Caso selecione M4,asculino
         if(Sexo[0].checked)
         {
             Genêro = 'Homem'

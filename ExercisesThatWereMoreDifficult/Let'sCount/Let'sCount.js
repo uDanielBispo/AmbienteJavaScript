@@ -1,5 +1,6 @@
 function Count()
 {
+    Answer.innerHTML = ``;
     let GetStart = document.getElementById('Start');
     let GetEnd = document.getElementById('End');
     let GetStep = document.getElementById('Step');

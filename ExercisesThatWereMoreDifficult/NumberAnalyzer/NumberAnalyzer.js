@@ -35,21 +35,20 @@ function CheckNumbers()
         let Smaller = ArrayNumbers[0]; 
         let Sum = 0;
         let Average = 0;
+        //Esse for especial é feito para varrer o array do inicio ao fim
         for(let Position in ArrayNumbers)
         {
             Sum += ArrayNumbers[Position];
             //So interesting
             if(ArrayNumbers[Position] > Bigger)
-            {          
-                Bigger = ArrayNumbers[Position];
-            }
+            {Bigger = ArrayNumbers[Position];}
+
             if(ArrayNumbers[Position] < Smaller)
-            {
-                Smaller = ArrayNumbers[Position];
-            }     
+            {Smaller = ArrayNumbers[Position];}     
         }
         Average = Sum / Total;
         Answer.innerHTML = '';
+        Answer.style.padding = '1px';
         Answer.innerHTML += `<p>The total of Numbers placed are: ${Total}</p>`;
         Answer.innerHTML += `<p>The Bigger number is: ${Bigger}</p>`;
         Answer.innerHTML += `<p>The Smaller number is: ${Smaller}</p>`;

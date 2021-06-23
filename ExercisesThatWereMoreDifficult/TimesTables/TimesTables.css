@@ -1,6 +1,7 @@
 body
 {
-    background-color: rgb(59, 177, 255);
+    background-image: linear-gradient( 110deg,crimson,rgb(20, 0, 0)) ;
+    height: 200vh;
 }
 header
 {

@@ -6,10 +6,10 @@ function carregar()
     let Mensagem = document.getElementById('mensagem');
 
     //retirando a informação (Hora e Minuto) do computador do usuario e alocando-as em variaveis 
-    let PegandoHora = new Date();
-    let PegandoMinutos = new Date();
-    let HoraDoUsuario = PegandoHora.getHours();
-    let MinutosDoUsuario = PegandoMinutos.getMinutes();
+    //let PegandoHora = new Date();
+    //let PegandoMinutos = new Date();
+    let HoraDoUsuario = 12//PegandoHora.getHours();
+    let MinutosDoUsuario = 10//PegandoMinutos.getMinutes();
 
     //Lógica para que os minutos NÃO fiquem assim: 16:5
     if(MinutosDoUsuario < 10)
