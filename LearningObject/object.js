@@ -10,4 +10,13 @@ let amigo =
     }
 }
 amigo.engordar(2)
-console.log(`${amigo.nome} pesa ${amigo.peso}Kg `)
+console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)
+
+//================================================\\
+class Pessoa
+{
+    Nome = 'Daniel';
+}
+let Daniel = new Pessoa
+console.log(Daniel)
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex001/favIcon.ico" type="image/x-icon">
+    <title>Div do lado de div</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body
+        {
+            font: "Open Sans", sans-serif;
+            font-size: 25px;
+        }        
+        div
+        {
+            width: 100px;
+            height: 100px;
+            display: inline-block; 
+        }
+        p
+        {
+            display: inline-block;
+            margin: 0;
+        }
+        #container-a
+        {
+            background-color: blueviolet;
+            margin-right: -4px;
+
+        }
+        #container-b
+        {
+            background-color: cyan;
+        }
+        .example
+        {
+            color: rgb(255, 255, 255);
+            text-align: justify;
+        }
+        .example::after
+        {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+        .example-item
+        {
+            width: 25%;
+            height: 150px;
+            display: inline-block;
+
+        }
+        .example-item_first
+        {
+            background-color: rgb(0, 128, 11);
+        }
+        .example-item_second
+        {
+            background-color: rgb(138, 134, 0);
+        }
+        .example-item_third
+        {
+            background-color: rgb(126, 0, 0);
+        }
+        p
+        {
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container-a"></div>
+        <div id="container-b"></div>
+        <p>teste</p>
+        <p>teste2</p>
+        <ul class="example">
+            <li class="example-item example-item_first">Primeiro</li>
+            <li class="example-item example-item_second">Segundo</li>
+            <li class="example-item example-item_third">Terçeiro</li>
+        </ul>
+    </main>
+</body>
+</html>
