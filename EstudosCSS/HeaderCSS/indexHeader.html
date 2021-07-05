@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header em html</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        body{
+                border: 10px ridge rgb(0, 112, 182);
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .main-container-nav{
+            background-color: #333;
+            padding: 0 10px;
+        }
+
+        .main-ul{
+            text-align: justify;
+
+        }
+
+        .main-li {
+            padding: 7px;
+            border-bottom: 3px solid rgb(0, 99, 169);
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            position: relative;
+            top: 5px;
+        }
+
+        .main-ul::after{
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+        .main-li_h1{
+            width: 40%;
+            text-align: center;
+            padding: 5px;
+
+        }
+        .main-container_img{
+            height: 50vh;
+            width: 100%;
+            background: url(/AmbienteJavaScript/Codigos-copiados/SiteResponsivo/style/ponte.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 20vh;
+            border-bottom: 10px solid #333;
+        }
+        .main-container_img h1{
+            font-family: cursive;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.632);
+            border-bottom: 5px solid rgb(0, 99, 169);
+            border-left: 4px solid rgb(0, 99, 169);
+            border-radius: 15px;
+            width: 70%;
+            margin: auto;
+        }
+        .main-article{
+            background-color: #333;
+            text-align: center;
+            width: 100%;
+ 
+        }
+        .main-article-div{
+            display: inline-block;
+            width: 25%;
+            border: 3px solid rgb(0, 112, 182);
+            padding: 10px 0 20px 0;
+            padding: 5px;
+        }
+        .main-article-div img{
+            width: 100%;
+            height: 50%;
+
+        }
+        .content{
+            height: 100%;
+            width: 100%;
+            background-color: #333;
+        }
+        .content div{
+            padding: 25px;
+            height: 33%;
+        }
+        .content h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .content p
+        {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-container">
+        <nav class="main-container-nav">
+            <ul class="main-ul">
+                <li class="main-li main-li_h1"><a href="#super-site"><h1 >Super Site</h1></a></li>
+                <li class="main-li main-li_first"><a href="#mais-sobre">Mais Sobre</a></li>
+                <li class="main-li main-li_second"><a href="#conteudo">Conteúdo</a></li>
+                <li class="main-li main-li_third"><a href="#inscrever-se">Inscrever-se</a></li>
+                <li class="main-li main-li_fourth"><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+        <div class="main-container_img"><h1>FullStack Senior Developer 2000</h1></div>
+    </header>
+    <main>
+         
+        <article class="main-article" id="mais-sobre">
+            <div class="main-article-div main-article-div_first">
+                <img src="/AmbienteJavaScript/Codigos-copiados/SiteResponsivo/style/grama.jpg" alt="Img">
+                <h2>Lorem Ipsum </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam tempora suscipit nihil voluptatibus eaque omnis 
+                    assumenda ipsum a obcaecati dicta excepturi repudiandae 
+                    necessitatibus, officiis quia adipisci ea neque dolorum 
+                    sequi.</p>
+            </div><!--
+           --><div class="main-article-div main-article-div_second">
+                <img src="/AmbienteJavaScript/Codigos-copiados/SiteResponsivo/style/mar.jpg" alt="Img">
+                <h2>Lorem Ipsum </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam tempora suscipit nihil voluptatibus eaque omnis 
+                    assumenda ipsum a obcaecati dicta excepturi repudiandae 
+                    necessitatibus, officiis quia adipisci ea neque dolorum 
+                    sequi.
+                </p>
+            </div><!--
+        --><div class="main-article-div main-article-div_third">
+                <img src="/AmbienteJavaScript/Codigos-copiados/SiteResponsivo/style/arvores.jpg" alt="Img">
+                <h2>Lorem Ipsum </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam tempora suscipit nihil voluptatibus eaque omnis 
+                    assumenda ipsum a obcaecati dicta excepturi repudiandae 
+                    necessitatibus, officiis quia adipisci ea neque dolorum 
+                    sequi.
+                </p>
+            </div><!--
+        --><div class="main-article-div main-article-div_fourth">
+                <img src="/AmbienteJavaScript/Codigos-copiados/SiteResponsivo/style/ceu.jpg" alt="Img">
+                <h2>Lorem Ipsum </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam tempora suscipit nihil voluptatibus eaque omnis 
+                    assumenda ipsum a obcaecati dicta excepturi repudiandae 
+                    necessitatibus, officiis quia adipisci ea neque dolorum 
+                    sequi.
+                </p>
+            </div>
+        </article>
+        <article class="content" id="conteudo">
+            <div> <h2>Lorem, ipsum.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero 
+                doloremque rem cupiditate sapiente dolore harum officiis, suscipit
+                dolorem voluptate eos eum accusamus ratione maiores obcaecati minus
+                numquam vitae aperiam ipsum rerum, dignissimos repellat quas nobis
+                earum! Eaque nisi ratione temporibus magni facere excepturi quam 
+                nihil sint accusamus, eum possimus quis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam 
+                explicabo maiores rem rerum nobis error impedit tempora harum blanditiis
+                facilis necessitatibus repellat corporis ipsum quis porro fugiat
+                praesentium libero nisi nesciunt cum, qui quidem ipsa dignissimos.
+                Sequi dignissimos iure quam est dolorem? Repellendus pariatur ex 
+                laborum ratione, quaerat vel vitae.           
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil 
+                sequi eveniet cupiditate? Dolore voluptas, atque sunt quos adipisci ad 
+                cupiditate totam itaque laborum impedit accusamus illum suscipit at
+                voluptatibus fuga dolor odit reiciendis eos corrupti vel a. Cum voluptas
+                idem necessitatibus nihil numquam quos unde possimus sit, fuga sequi.         
+            </p></div>
+            <div><h2>Lorem, ipsum.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero 
+                doloremque rem cupiditate sapiente dolore harum officiis, suscipit
+                dolorem voluptate eos eum accusamus ratione maiores obcaecati minus
+                numquam vitae aperiam ipsum rerum, dignissimos repellat quas nobis
+                earum! Eaque nisi ratione temporibus magni facere excepturi quam 
+                nihil sint accusamus, eum possimus quis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+                explicabo maiores rem rerum nobis error impedit tempora harum blanditiis facilis necessitatibus repellat corporis ipsum quis porro fugiat praesentium libero nisi nesciunt cum, qui quidem ipsa dignissimos. Sequi dignissimos iure quam est dolorem? Repellendus pariatur ex laborum ratione, quaerat vel vitae.           
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil 
+                sequi eveniet cupiditate? Dolore voluptas, atque sunt quos adipisci ad 
+                cupiditate totam itaque laborum impedit accusamus illum suscipit at 
+                voluptatibus fuga dolor odit reiciendis eos corrupti vel a. Cum voluptas 
+                quidem necessitatibus nihil numquam quos unde possimus sit, fuga sequi.
+            </p></div>
+            <div> <h2>Lorem, ipsum.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero 
+                doloremque rem cupiditate sapiente dolore harum officiis, suscipit
+                dolorem voluptate eos eum accusamus ratione maiores obcaecati minus
+                numquam vitae aperiam ipsum rerum, dignissimos repellat quas nobis
+                earum! Eaque nisi ratione temporibus magni facere excepturi quam 
+                nihil sint accusamus, eum possimus quis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam 
+                explicabo maiores rem rerum nobis error impedit tempora harum blanditiis 
+                facilis necessitatibus repellat corporis ipsum quis porro fugiat praesentium libero nisi nesciunt cum, qui quidem ipsa dignissimos. Sequi dignissimos iure quam est dolorem? Repellendus pariatur ex laborum ratione, quaerat vel vitae.           
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil sequi 
+                eveniet cupiditate? Dolore voluptas, atque sunt quos adipisci ad cupiditate 
+                totam itaque laborum impedit accusamus illum suscipit at voluptatibus fuga 
+                dolor odit reiciendis eos corrupti vel a. Cum voluptas quidem necessitatibus 
+                nihil numquam quos unde possimus sit, fuga sequi.          
+            </p></div>
+           
+            
+           
+        </article>
+    </main>
+</body>
+</html>
