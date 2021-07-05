@@ -1,0 +1,25 @@
+.example{
+    color: #fff;
+    text-align: center;
+}
+
+.example-item{
+
+    display: inline;
+}
+
+.example-item_first{
+    background-color: darkblue;
+}
+.example-item_second{
+    background-color: blueviolet;
+}
+.example-item_third{
+    background-color: magenta;
+    
+}
+h3
+{
+    background-color: cyan;
+    text-align: right
+}

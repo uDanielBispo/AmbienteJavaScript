@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    text-align: center;
+}
+.main-article
+{
+    text-align: center;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.main-article-div {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+
+.main-article-div_first{
+    background-color: cyan;
+}
+
+.main-article-div_second{
+    background-color: rgb(76, 76, 76);
+    color: white; 
+
+}
+
+.main-article-div_third{
+    background-color: rgb(37, 0, 130);
+    color: white; 
+
+}
+
+.main-article-div_fourth{
+    background-color: rgb(126, 0, 0);
+    color: white; 
+
+}

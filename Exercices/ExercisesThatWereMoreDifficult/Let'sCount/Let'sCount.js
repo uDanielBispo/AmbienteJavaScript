@@ -36,9 +36,9 @@ function Count()
                 }
             }
         }
-        else{alert("Step can't be 0")}
+        else{alert("Step can't be 0");}
     }
-    else{alert('Fill in the gaps.')}
+    else{alert('Fill in the gaps.');}
 
     Answer.innerHTML += `\u{1F3C1}`;
 }

@@ -1,3 +1,9 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body
 {
     background-color: rgb(43, 187, 79);
@@ -6,6 +12,7 @@ header
 {
     text-align: center;
     color: white;
+    padding: 5vh;
 }
 section
 {
@@ -14,7 +21,7 @@ section
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
     padding: 15px;
     margin: auto;
-    width: 500px;
+    width: 500px;  
 }
 footer
 {
@@ -22,9 +29,12 @@ footer
     color: rgb(231, 231, 231);
     font-style: italic;
 }
-select
+#SelectNumbers
 {
-    width: 100%;   
+    width: 100%; 
 }
-
+input,p
+{
+    padding: 10px;
+}
 

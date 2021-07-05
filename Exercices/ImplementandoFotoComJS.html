@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Implementação com JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+            background: url('../Exercices/ImgaemDeFundo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 90);
+            padding: 10vh
+        }
+        section
+        {
+            background-color: rgba(51, 51, 51, 0.666);
+            color: #fff;
+            margin: auto;
+            width: 90%;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section h1, section p{
+            font-family: helvetica, sans-serif;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+        
+        section p input{
+            font-size: 1rem;
+            border: none;
+            padding: 5px;
+            width: 100%;
+            margin: 10px;
+            background-color: rgb(255, 134, 229);
+            color: white;
+        }
+               
+        section p input:hover{
+            background-color: rgb(115, 58, 103);;
+        }
+        img{
+            border: 5px ridge rgb(184, 0, 0);
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <section id="section">
+    <h1>Exercicio de Implementação de Imagens com JS</h1>
+    <p>
+        A intenção é que ao clicar neste botão: 
+        <input type="button" value="Inserir" onclick="AdicionarImagem()">
+        Adicione uma imagem ao site
+    </p>
+    </section>
+    <script>
+        const section = document.getElementById('section')
+        function AdicionarImagem()
+        {
+            var img = document.createElement("img");
+            img.setAttribute("id", "foto");
+            img.src = 'foto-jovem-f.png';
+            document.body.appendChild(img);
+            section.appendChild(img);
+        }
+    </script>
+</body>
+</html>
