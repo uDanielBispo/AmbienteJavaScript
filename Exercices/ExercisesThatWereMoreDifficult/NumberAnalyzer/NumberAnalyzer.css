@@ -3,10 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body
 {
-    background-color: rgb(43, 187, 79);
+    background-image: linear-gradient(45deg, red, blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 header
 {
@@ -16,25 +21,66 @@ header
 }
 section
 {
-    background-color: white;
+    background-color: rgba(84, 84, 84, 0.714);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.796);
     padding: 15px;
     margin: auto;
     width: 500px;  
+    text-align: center;
 }
 footer
 {
     text-align: center;
-    color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
     font-style: italic;
 }
 #SelectNumbers
 {
-    width: 100%; 
+    width: 100%;
+    outline: none;
 }
+
 input,p
 {
     padding: 10px;
 }
+section p, header h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input:focus
+{
+    outline: none;
+    
+}
+input[type='submit']{
+    border: none;
+}
+#check,#add{
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid white ;
+    border-radius: 10px;
+    
+}
+#check{
+    margin: 0 10px;
+    width: 96%;
+}
+input[type='submit']:hover{
+    background-image: linear-gradient(45deg, red, blue);
+    transition: .5s;
+    cursor: pointer;
+}
+#Answer{
+    margin: 10px;
+}
 
+a
+{
+    color: white;
+}
+a:hover{
+    color: yellow;
+}
