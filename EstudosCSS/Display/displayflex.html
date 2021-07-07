@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        /*TOTAL GAMBIARRA, MAS TA FUNCIONANDO DO JEITO QUE EU QUERO*/
+        .back-header{
+            background: #333;
+            border-bottom: 10px solid dodgerblue;
+            text-align: center;
+        }
+        /*HEADER*/
+        
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items:center;
+            padding: 3vh;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .logo{
+            text-align: center;
+            
+        }
+        ul{
+            display: flex; 
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+        li{
+            margin: 5px;
+        }
+        header a{
+            color: rgb(255, 255, 255);
+            padding: 0px 10px;           
+           
+        }
+        header div{
+            flex: 1;
+            text-align: center;
+        }
+        header #search{
+            padding: 0 2px;
+            width: 80%;
+            max-width: 500px;
+            
+        }
+        #search:focus{
+            outline:none;
+            border-bottom: 2px solid dodgerblue;
+        }
+        /*DISPLAY FLEX*/
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;    
+            justify-content: center;
+            background: #333;
+            
+        }   
+        .main-div{
+            
+            margin: 10px;
+            flex: 1;
+
+        }
+        .main-div_1{
+            background: crimson;
+        }
+        .main-div_2{
+            background: cyan;
+        }
+        .main-div_3{
+            background: chartreuse;
+        }
+        .main-div_4{
+            background: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="back-header">
+        <header>      
+            <a href="#" class="logo" class="child">Logo</a>
+            <div>
+                <input type="search" class="child" id="search" placeholder="Pesquisar...">
+            </div>
+                <ul class="child">
+                    <li><a href="#">Mais Sobre</a></li>
+                    <li><a href="#">Conteudo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+        </header>
+    </div>
+    <main class="main">
+        <div class="main-div main-div_1"><h1>1</h1></div>
+        <div class="main-div main-div_2"><h1>2</h1></div>
+        <div class="main-div main-div_3"><h1>3</h1></div>
+        <div class="main-div main-div_4"><h1>4</h1></div>
+    </main>
+</body>
+</html>
