@@ -10,13 +10,18 @@ let amigo =
     }
 }
 amigo.engordar(2)
-console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)
+console.log(`${amigo.nome} pesa ${amigo.peso}Kg \n`)
 
 //================================================\\
-class Pessoa
-{
-    Nome = 'Daniel';
-}
-let Daniel = new Pessoa
-console.log(Daniel)
 
+class Carro{
+    constructor/*Carro*/(nome){
+        this.nome = nome;
+        console.log(`Novo Carro ${this.nome}`);
+    }
+}
+
+let c1 = new Carro('Vectra');
+let c2 = new Carro('Monza');
+let c3 = new Carro('Fusca');
+let c4 = new Carro('Ômega');
