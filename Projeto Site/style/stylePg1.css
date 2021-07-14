@@ -2,20 +2,22 @@ body{
     background: #dadada;
 }
 main article{
-    padding: 10px;
-    border-radius: 5px;
+    padding-top: 10px;
     color: #000;
 }
 img{
     max-width: 100%;
     display: block;
 }
+.header-div2-h1 h1{
+    margin: 5vh auto;
+}
 h1
 {
     text-align: center;
     border-bottom: 3px solid turquoise;
     width: 70%;
-    margin: 5vh auto 5vh;
+    margin:  10vh auto 10px auto ;
 }
 article{
     width: 80%;
@@ -88,14 +90,12 @@ header a img{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-
-    
 }
 .news-nav-ul li{
-        flex: 1 1 30%;
-        margin: 5px;
-        padding: 10px;
-        text-align: justify;
+    flex: 1 1 30%;
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
 }
 /*PROMOTIONS*/
 .article-promotions{
@@ -103,9 +103,10 @@ header a img{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     max-width: 800px;
-    margin: 0 auto;
     padding: 10px;
+    padding-top: 20px;
     align-items:flex-start;
+    margin-bottom: 10vh;
 }
 
 .article-promotions div:nth-child(1){
@@ -156,7 +157,7 @@ footer div{
 }
 footer h1{
     width: 100%;
-    margin: 10px 200px;
+    margin: 10px 40vh;
     color: #fff;
 }
 footer p{
