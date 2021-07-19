@@ -31,19 +31,24 @@ section
 }
 footer
 {
-    text-align: center;
+    display: grid;
+    text-align: center ;
     color: rgb(0, 0, 0);
     font-style: italic;
+    justify-content: center;
 }
 #SelectNumbers
 {
     width: 100%;
     outline: none;
+    
 }
 
 input,p
 {
-    padding: 10px;
+    padding:  10px 0;
+    text-align: justify;
+   
 }
 section p, header h1{
     color: white;
@@ -55,28 +60,31 @@ input:focus
     
 }
 input[type='submit']{
-    border: none;
-}
-#check,#add{
-    background-color: #333;
-    color: #fff;
-    border-bottom: 2px solid white ;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     border-radius: 10px;
+    border: none;
+    background-color: #08558b;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#add, #RemoveNumbers, #Clear{
+    width: 30%;
     
+    margin:  3% 0 0 2%;
 }
 #check{
-    margin: 0 10px;
     width: 96%;
 }
-input[type='submit']:hover{
-    background-image: linear-gradient(45deg, red, blue);
+input[type="submit"]:hover{
     transition: .5s;
-    cursor: pointer;
+    background-color: #000;
 }
 #Answer{
     margin: 10px;
 }
-
 a
 {
     color: white;

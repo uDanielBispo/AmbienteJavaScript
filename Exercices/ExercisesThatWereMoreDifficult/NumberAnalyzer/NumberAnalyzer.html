@@ -13,10 +13,12 @@
     </header>
     <section>
         <div>
-            <p>
+            <p class="div-p">
                 Number (between 1 and 100):
                 <input type="number" name="Numbers" id="Numbers" placeholder="1-100">
                 <input type="submit" value="Add" id="add" onclick="AddNumbers()">
+                <input type="submit" value="Remove" id="RemoveNumbers" onclick="RemoveNumbers()">
+                <input type="submit" value="Clear" id="Clear" onclick="Clear()">
             </p>
             <p> 
                 <select name="SelectNumbers" id="SelectNumbers"  size="10">
@@ -26,7 +28,7 @@
         </div>
         <div id="Answer" style="background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.714), rgba(0, 0, 255, 0.707)); border-radius: 15px;"></div>
     </section>
-    <footer>
+    <footer class="footer">
         <p>Daniel Bispo <a href="https://www.youtube.com/user/cursosemvideo">&copy;Curso em Vídeo</a> 
     </footer>
 

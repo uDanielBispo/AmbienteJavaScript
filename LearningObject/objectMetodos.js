@@ -37,7 +37,7 @@ class Carro{
         return this.comb
     }
  }
-let c1 = new Carro('Vectra' ,'', 'Sedan', 'Chevrolet');
+let c1 = new Carro('Vectra' ,'dourado', 'Sedan', 'Chevrolet');
 let c2 = new Carro('Monza' ,'Vermelho', 'Sedan', 'Chevrolet');
 let c3 = new Carro('Fusca','Branco', 'Hatch', 'Volkswagen');
 let c4 = new Carro('Ômega' ,'Preto fosco', 'Sedan', 'Chevrolet');

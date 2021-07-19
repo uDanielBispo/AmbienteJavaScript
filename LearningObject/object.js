@@ -3,13 +3,13 @@ let amigo =
 {
     nome:'Maria', 
     peso: 50,
-    engordar(p=0)
+    engordar(p)
     {
-        console.log('engordou')
+        console.log(`engordou ${p} kilos`)
         this.peso += p
     }
 }
-amigo.engordar(2)
+amigo.engordar(8)
 console.log(`${amigo.nome} pesa ${amigo.peso}Kg \n`)
 
 //================================================\\

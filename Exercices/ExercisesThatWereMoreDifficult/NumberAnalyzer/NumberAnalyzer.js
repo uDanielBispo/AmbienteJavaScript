@@ -2,10 +2,10 @@
 let SelectNumbers = document.getElementById('SelectNumbers');
 let Answer = document.getElementById('Answer');
 let ArrayNumbers = [];
-
+let Numbers = document.getElementById('Numbers')
 function AddNumbers() 
 { 
-    let Numbers = document.getElementById('Numbers')
+    
     if(Numbers.value.length != 0)
     {
         if(Numbers.value <= 100 && Numbers.value >= 1)
@@ -24,6 +24,31 @@ function AddNumbers()
     else{alert('Fill the space Number.')}
     Numbers.value = ''
     Numbers.focus()
+}
+function RemoveNumbers(){
+
+        ArrayNumbers.pop();
+        let OptionNumbers = document.createElement('option');
+      
+        if (ArrayNumbers.length == 0 ) {
+            OptionNumbers.text = `No values`;
+            SelectNumbers.appendChild(OptionNumbers);
+        }
+        else{
+            OptionNumbers.text = `${ArrayNumbers[ArrayNumbers.length -1]} --> ${ArrayNumbers}`;
+            SelectNumbers.appendChild(OptionNumbers);
+        }
+}
+
+function Clear(){
+    if (SelectNumbers.options.length != 0) {        
+        var length = SelectNumbers.options.length;
+
+        for (i = length-2; i >= 0; i--) {
+        SelectNumbers.options[i] = null;
+        }
+    }
+    else{alert('Give some value to clear')}
 }
 
 function CheckNumbers() 
@@ -57,3 +82,4 @@ function CheckNumbers()
     }
     else{alert('Give some value to check')}
 }
+
