@@ -5,7 +5,6 @@ let ArrayNumbers = [];
 let Numbers = document.getElementById('Numbers')
 function AddNumbers() 
 { 
-    
     if(Numbers.value.length != 0)
     {
         if(Numbers.value <= 100 && Numbers.value >= 1)
@@ -26,7 +25,6 @@ function AddNumbers()
     Numbers.focus()
 }
 function RemoveNumbers(){
-
         ArrayNumbers.pop();
         let OptionNumbers = document.createElement('option');
       
